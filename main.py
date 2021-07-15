@@ -3,8 +3,8 @@ import torch
 import torchvision
 from onnx2pytorch import ConvertModel
 
-#onnx_model = onnx.load("/home/serhii/VSCProjects/trophallaxis-DATA/TrophNet.onnx")
-onnx_model = onnx.load("/home/serhii/VSCProjects/ONNX-Runtime-Inference/data/models/squeezenet1.1-7.onnx")
+#onnx_model = onnx.load("models/TrophNet.onnx")
+onnx_model = onnx.load("models/squeezenet1.1-7.onnx")
 pytorch_model = ConvertModel(onnx_model)
 
 #dummy_input = torch.randn(1, 3, 224, 224, device='cpu')
